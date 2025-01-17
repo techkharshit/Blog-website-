@@ -7,10 +7,10 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div>
+      <div className='py-24 mx-auto max-w-[720px] px-[25px] '>
         <Blogs/>
-        <Pagination/>
       </div>
+      <Pagination/>
     </div>
   )
 }
