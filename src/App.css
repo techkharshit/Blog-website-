@@ -5,6 +5,42 @@
 @tailwind utilities;
 
 html,
+/* Styles for the parallax container */
+.parallax-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;   /* Allow vertical scrolling */
+  position: relative;
+  background: url('../public/image.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Content wrapper to stack on top of the background */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Parallax background effect */
+.parallax-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('../public/image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2); /* Creates the parallax effect */
+  opacity: 0.2;
+  z-index: -1;
+}
+
+  
+
+  
+  
 body {
     overflow-x: hidden;
 }

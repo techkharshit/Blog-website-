@@ -48,7 +48,7 @@ const BlogPage = () => {
             <Header />
             <div className='max-w-[720px] px-[25px] '>
                 <div>
-                    <button className='mb-6 border-2 rounded-md border-[#dfdfdf] py-1 px-4 hover:bg-[#efefef] transition-all'
+                    <button className='bg-[#efefef] mb-6 border-2 rounded-md border-[#020202] py-1 px-4 hover:bg-[#efefef] transition-all'
                         onClick={() => navigation(-1)}
                     >
                         Back
@@ -62,7 +62,7 @@ const BlogPage = () => {
                         blog ?
                             (<div className='flex flex-col gap-y-10'>
                                 <BlogDetails post={blog} />
-                                <h2 className='text-3xl font-bold'> Related Blogs </h2>
+                                <h2 className='text-3xl font-bold bg-[#efefef] border-[7px] w-[220px]'> Related Blogs </h2>
                                 {
                                     relatedblogs.map((post) => (
                                         <div key={post.id}>

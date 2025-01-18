@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const BlogDetails = ({post}) => {
   return (
-    <div className='p-4 rounded-lg shadow-xl bg-[#dfdfdf] hover:scale-[1.02] transition-all duration-300'>
+    <div className='p-4 rounded-lg shadow-xl bg-[#dfdfdf] hover:scale-[1.02] transition-all duration-300' style={{opacity: 0.9}}>
       <NavLink to={`/blog/${post.id}`} >
         <span className='text-xl font-bold hover:underline transition-all duration-200'>{post.title}</span>
       </NavLink>
